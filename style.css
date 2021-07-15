@@ -1,0 +1,87 @@
+body{
+    background-color: hsl(233, 47%, 7%);
+    display: flex;
+    justify-content: center;
+    margin-top: 10em;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+.box-container{
+    background-color: hsl(244, 38%, 16%);
+    width: 500px;
+    height: 350px;
+    padding: 1rem;
+    box-sizing: border-box;
+    box-shadow: black 1px 1px 1px 1px;
+
+}
+.image-box{
+    background: url(/images/image-header-desktop.jpg);
+    border-radius: 0 5px 5px 0;
+    box-shadow: inset 0 0 0 1000px rgba(137, 26, 201, 0.5);
+    
+}
+.insight-box{
+    border-radius: 5px 0 0 5px;
+    color: white;
+}
+
+.title {
+    color: hsl(0, 0%, 100%);
+    font-size: xx-large;
+    text-align: center;
+}
+.paragraph{
+    color: hsl(0, 0%, 100%, 0.6);
+    font-size: 15px;
+    text-align: center;
+}
+
+.insight{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+.num{
+    color: hsl(0, 0%, 100%);
+    font-size: large;
+}
+.pro{
+    color: hsl(0, 0%, 100%, 0.6);
+    font-size: 12px;
+}
+.cont{
+    margin-right: 1rem;
+    padding-top: 2rem;
+}
+.title strong{
+    color: rgb(137, 26, 201);
+}
+@media (max-width: 700px){
+    body{
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+    .insight-box{
+        height: 500px;
+        border-radius: 0 0 8px 8px;
+    }
+    .box-container{
+        max-width: 400px;
+        align-self: center;
+    }
+    .insight{
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem;
+    }
+    .image-box{
+        border-radius: 8px 8px 0 0;
+    }
+}
+@media (min-width:1441px){
+    .box-container{
+        max-width: 1440px;
+        align-self: center;
+    }
+}
